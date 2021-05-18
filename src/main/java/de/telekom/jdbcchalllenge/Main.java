@@ -55,6 +55,15 @@ public class Main {
 			preparendStatement.setString(4, surname);
 			preparendStatement.execute();
 			
+			resultSet = statement.executeQuery("select * from personen");
+			
+			while (resultSet.next()) {
+				System.out.println("ID          : " + resultSet.getInt(1)); // ID
+				System.out.println("SALUTATION  : " + resultSet.getInt(2)); // Anrede
+				System.out.println("NAME        : " + resultSet.getString(3)); // Nachname
+				System.out.println("SURNAME     : " + resultSet.getString(4)); // Vorname
+				System.out.println("------------");
+			}
 			
 			resultSet.close();
 			statement.close(); 
