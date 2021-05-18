@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>de.telekom.sea</groupId>
+	<groupId>de.telekom.jdbcchalllenge</groupId>
 	<artifactId>JDBCChalllenge</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
@@ -22,7 +22,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>de.telekom.sea.Main</mainClass>
+							<mainClass>de.telekom.jdbcchalllenge.Main</mainClass>
 						</manifest>
 						<manifestEntries>
 							<author>Heinrich Wedmann</author>
@@ -40,6 +40,12 @@
 			<groupId>org.mariadb.jdbc</groupId>
 			<artifactId>mariadb-java-client</artifactId>
 			<version>2.7.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.25</version>
 		</dependency>
 	</dependencies>
 </project>
